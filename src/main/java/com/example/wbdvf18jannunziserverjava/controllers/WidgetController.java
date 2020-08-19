@@ -52,7 +52,7 @@ public class WidgetController {
     public List<Widget> deleteWidget(
             @PathVariable("widgetId") Integer id) {
         int index = -1;
-        for(int i=0; i<widgets.size()-1; i++) {
+        for(int i=0; i<widgets.size(); i++) {
             if(widgets.get(i).getId().equals(id)) {
                 index = i;
             }
